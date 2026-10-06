@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Veta — Autonomous Agent Fleet</title>
+<meta name="description" content="Veta is a personal autonomous agent fleet: planning, execution, and life automation under one command structure.">
+<style>
+:root{
+  --bg:#0a0e14; --panel:#11161f; --ink:#e8edf4; --muted:#8b96a5;
+  --accent:#4f8cff; --accent2:#7c5cff; --line:#1e2633;
+  --mono:'SF Mono',ui-monospace,Menlo,monospace;
+  --sans:-apple-system,'SF Pro Display','Segoe UI',sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.6}
+a{color:var(--accent);text-decoration:none} a:hover{text-decoration:underline}
+.wrap{max-width:880px;margin:0 auto;padding:0 24px}
+header{border-bottom:1px solid var(--line);padding:28px 0}
+header .wrap{display:flex;align-items:center;justify-content:space-between}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px;letter-spacing:.5px}
+.logo .mark{width:34px;height:34px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:grid;place-items:center;font-family:var(--mono);font-weight:700;font-size:15px;color:#fff}
+nav a{color:var(--muted);margin-left:22px;font-size:14px} nav a:hover{color:var(--ink)}
+.hero{padding:72px 0 56px}
+.hero h1{font-size:44px;line-height:1.15;letter-spacing:-1px;font-weight:800}
+.hero h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p.sub{color:var(--muted);font-size:18px;margin-top:16px;max-width:640px}
+.tagline{font-family:var(--mono);font-size:13px;color:var(--accent);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:8px 0 64px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:16px;margin-bottom:8px}
+.card p{color:var(--muted);font-size:14px}
+.badge{display:inline-block;font-family:var(--mono);font-size:11px;color:var(--accent);border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin-bottom:12px}
+section.docs{border-top:1px solid var(--line);padding:48px 0}
+section.docs h2{font-size:22px;margin-bottom:6px}
+section.docs .lede{color:var(--muted);font-size:14px;margin-bottom:22px}
+.doclinks{display:flex;gap:12px;flex-wrap:wrap}
+.doclinks a{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 18px;font-size:14px;color:var(--ink)}
+.doclinks a:hover{border-color:var(--accent);text-decoration:none}
+footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}
+footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.status{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:var(--muted)}
+.dot{width:8px;height:8px;border-radius:50%;background:#3ecf8e}
+@media(max-width:640px){.hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="logo"><div class="mark">V</div>VETA</div>
+    <nav>
+      <a href="#system">System</a>
+      <a href="#legal">Legal</a>
+      <a href="mailto:contact@veta.systems">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="tagline">Personal Agent Infrastructure</div>
+      <h1>One command structure.<br><span class="grad">An entire autonomous fleet.</span></h1>
+      <p class="sub">Veta orchestrates specialist AI agents — planning, engineering, verification, research, and life automation — with human-gated guardrails and full audit trails.</p>
+    </div>
+  </section>
+
+  <section id="system">
+    <div class="wrap">
+      <div class="grid">
+        <div class="card">
+          <div class="badge">ORCHESTRATION</div>
+          <h3>Hermes Core</h3>
+          <p>Plans, routes, and reviews every task. Owns the loop: intake → dispatch → verification → knowledge commit.</p>
+        </div>
+        <div class="card">
+          <div class="badge">EXECUTION</div>
+          <h3>Worker Agents</h3>
+          <p>Specialist agents execute bounded packets with acceptance criteria, evidence, and a two-attempt cap.</p>
+        </div>
+        <div class="card">
+          <div class="badge">LIFE LAYER</div>
+          <h3>Personal Ops</h3>
+          <p>Calendar truth, inbox triage, deadline radar, and watchdogs — silent when stable, loud when it matters.</p>
+        </div>
+        <div class="card">
+          <div class="badge">GOVERNANCE</div>
+          <h3>Human Gates</h3>
+          <p>Money, publishing, and account actions always require explicit human approval. Everything else runs itself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="docs" id="legal">
+    <div class="wrap">
+      <h2>Legal &amp; Policies</h2>
+      <p class="lede">Public documents governing use of the Veta system and its interfaces.</p>
+      <div class="doclinks">
+        <a href="/privacy.html">Privacy Policy</a>
+        <a href="/terms.html">Terms of Service</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Veta. All rights reserved.</div>
+    <div class="status"><span class="dot"></span> All systems operational</div>
+    <div><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></div>
+  </div>
+</footer>
+</body>
+</html>
